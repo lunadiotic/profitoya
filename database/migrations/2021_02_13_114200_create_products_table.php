@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('unit');
             $table->decimal('price_basic', 15, 2);
-            $table->decimal('price_selling', 15, 2);
+            $table->decimal('price_sell', 15, 2);
             $table->timestamps();
         });
     }

@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Struktur dari tabel `provinces`
 --
-
+DROP TABLE IF EXISTS `provinces`;
 CREATE TABLE `provinces` (
   `id` char(2) NOT NULL,
   `title` tinytext NOT NULL
@@ -53,7 +53,7 @@ COMMIT;
 --
 -- Struktur dari tabel `cities`
 --
-
+DROP TABLE IF EXISTS `cities`;
 CREATE TABLE `cities` (
   `id` char(4) NOT NULL,
   `province_id` char(2) NOT NULL,
@@ -82,7 +82,7 @@ COMMIT;
 --
 -- Struktur dari tabel `subdistricts`
 --
-
+DROP TABLE IF EXISTS `subdistricts`;
 CREATE TABLE `subdistricts` (
   `id` char(6) NOT NULL,
   `city_id` char(4) NOT NULL,
@@ -149,7 +149,7 @@ COMMIT;
 --
 -- Struktur dari tabel `villages`
 --
-
+DROP TABLE IF EXISTS `villages`;
 CREATE TABLE `villages` (
   `id` char(10) NOT NULL,
   `subdistrict_id` char(6) DEFAULT NULL,

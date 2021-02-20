@@ -19,9 +19,11 @@ class CreateTransactionsTable extends Migration
             $table->unsignedBigInteger('product_id');
             $table->string('unit');
             $table->decimal('price_basic', 15, 2);
-            $table->decimal('price_selling', 15, 2);
+            $table->decimal('price_sell', 15, 2);
             $table->tinyInteger('qty_sold');
             $table->tinyInteger('qty_stock');
+            $table->decimal('total_sell', 15, 2);
+            $table->decimal('total_stock', 15, 2);
             $table->date('date');
             $table->timestamps();
         });
